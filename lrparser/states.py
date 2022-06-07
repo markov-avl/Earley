@@ -16,13 +16,13 @@ class State:
         return self._symbol
 
     def is_normal(self) -> bool:
-        return self._symbol == 'q'
+        return self._symbol == State.NORMAL.symbol
 
     def is_return(self) -> bool:
-        return self._symbol == 'b'
+        return self._symbol == State.RETURN.symbol
 
     def is_final(self) -> bool:
-        return self._symbol == 't'
+        return self._symbol == State.FINAL.symbol
 
     @property
     def symbol(self) -> str:
